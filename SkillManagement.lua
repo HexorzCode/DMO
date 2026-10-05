@@ -1,13 +1,13 @@
 -- ==========================================
 -- SCRIPT AUTO SKILL: NORMAL vs SEMI vs BURST
 -- ==========================================
--- SCRIPT_VERSION = "1.0.0"
+-- SCRIPT_VERSION = "1.1.0"
 
--- @config TARGET_MAP_ID:int:3:Map ID untuk menghentikan script (Stop Script)
--- @config TARGET_MONSTER_TYPES:list:52228,52213:Daftar ID Monster untuk memicu mode Full Burst (Prioritas Tertinggi)
--- @config SEMI_BURST_MONSTER_TYPES:list:52198:Daftar ID Monster untuk memicu mode Semi Burst (Prioritas Menengah)
--- @config NORMAL_SKILL_SLOTS:list:3:Slot skill yang aktif pada mode Normal (pisahkan dengan koma, misal: 0,3)
--- @config SEMI_BURST_SKILL_SLOTS:list:0,3:Slot skill yang aktif pada mode Semi Burst (pisahkan dengan koma, misal: 0,3)
+-- @config TARGET_MAP_ID:int:3:Map ID tempat script otomatis berhenti (misal 3 = kota utama)
+-- @config TARGET_MONSTER_TYPES:list:52228,52213:ID Monster pemicu FULL BURST - semua skill aktif. Pisahkan dengan koma
+-- @config SEMI_BURST_MONSTER_TYPES:list:52198:ID Monster pemicu SEMI BURST - hanya skill terpilih. Pisahkan dengan koma
+-- @config NORMAL_SKILL_SLOTS:slots:3:Skill yang dipakai saat mode NORMAL (centang slotnya):0:5
+-- @config SEMI_BURST_SKILL_SLOTS:slots:0,3:Skill yang dipakai saat mode SEMI BURST (centang slotnya):0:5
 
 -- 1. HELPER FUNCTION (Aman untuk baca objek C++)
 local function getProp(obj, name)
