@@ -1,0 +1,17 @@
+# Konfigurasi Skill Manager
+# Baris yang dimulai dengan # akan diabaikan
+
+# Map ID di mana script akan otomatis berhenti (misal 3 = kota)
+TARGET_MAP_ID=3
+
+# Slot skill yang aktif saat mode NORMAL (pisahkan dengan koma, range 0-5)
+NORMAL_SKILL_SLOTS=3
+
+# Slot skill yang aktif saat mode SEMI BURST
+SEMI_BURST_SKILL_SLOTS=0,3,4
+
+# ID Monster pemicu FULL BURST (Semua skill aktif)
+TARGET_MONSTER_TYPES=52215,52212,52211,52214,52216,52221,52218,52219,52217,52220,52225,52224,52222,52223,52226,52227,52228,52229,52230,52231,52232,52234,52233,52235,52236,52239,52240,52237,52238
+
+# ID Monster pemicu SEMI BURST
+SEMI_BURST_MONSTER_TYPES=52200,52197,52198,52196,52199,52201,52206,52203,52204,52202,52205,52210,52209,52207,52208
